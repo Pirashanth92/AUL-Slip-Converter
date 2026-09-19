@@ -1,0 +1,11 @@
+{
+  "name": "bank-slip-converter",
+  "version": "1.0.0",
+  "description": "Sri Lankan Bank Slip Converter",
+  "main": "main.js",
+  "author": "Logapirashanth",
+  "license": "UNLICENSED",
+  "scripts": {"start":"electron .","dist:win":"electron-builder --win portable nsis"},
+  "devDependencies": {"electron":"^31.0.0","electron-builder":"^24.13.3"},
+  "build": {"appId":"lk.logapirashanth.bankslipconverter","productName":"Bank Slip Converter","files":["main.js","index.html"],"win":{"target":["portable","nsis"]},"nsis":{"oneClick":false,"perMachine":false,"allowToChangeInstallationDirectory":true,"createDesktopShortcut":true,"createStartMenuShortcut":true}}
+}
